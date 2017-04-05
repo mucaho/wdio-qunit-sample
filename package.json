@@ -1,0 +1,35 @@
+{
+  "name": "craftyjs",
+  "version": "0.8.0",
+  "description": "Example project using grunt, webdriverio and qunit to do cross-browser visual regression tests.",
+  "keywords": [
+    "javascript",
+    "webdriver",
+    "webdriverio",
+    "wdio",
+    "grunt",
+    "qunit"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mucaho/wdio-qunit-sample",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mucaho/wdio-qunit-sample.git"
+  },
+  "author": {
+    "name": "mucaho",
+    "url": "https://github.com/mucaho"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-run": "^0.6.0",
+    "grunt-webdriver": "^2.0.3",
+    "phantomjs-prebuilt": "^2.1.14",
+    "wdio-qunit-framework": "mucaho/wdio-qunit-framework#master",
+    "webdriverio": "^4.6.2"
+  }
+}

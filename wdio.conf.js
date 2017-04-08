@@ -34,11 +34,6 @@ exports.config = {
         //console.log('before', ...arguments);
     },
     //
-    // Hook that gets executed before the suite starts
-    beforeSuite: function (suite) {
-        //console.log('beforeSuite', ...arguments);
-    },
-    //
     // Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
     // beforeEach in Mocha)
     beforeHook: function () {
@@ -51,9 +46,14 @@ exports.config = {
         //console.log('afterHook', ...arguments);
     },
     //
+    // Hook that gets executed before the suite starts
+    beforeSuite: function (suite) {
+        //console.log('beforeSuite', suite);
+    },
+    //
     // Function to be executed before a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
     beforeTest: function (test) {
-        //console.log('beforeTest', ...arguments);
+        //console.log('beforeTest', test);
     },
     //
     // Runs before a WebdriverIO command gets executed.
@@ -68,12 +68,12 @@ exports.config = {
     //
     // Function to be executed after a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
     afterTest: function (test) {
-        //console.log('afterTest', ...arguments);
+        //console.log('afterTest', test);
     },
     //
     // Hook that gets executed after the suite has ended
     afterSuite: function (suite) {
-        //console.log('afterSuite', ...arguments);
+        //console.log('afterSuite', suite);
     },
     //
     // Gets executed after all tests are done. You still have access to all global variables from
